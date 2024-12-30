@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | K-Town Gym</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename= 'index.css')}}"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo">
+        <a href="#"><img src="url(../static/logo.png)" alt="logo" /></a>
+      </div>
+      <ul class="nav__links">
+        <li class="link"><a href="{{ url_for('website')}}">Home</a></li>
+        <li class="link"><a href="{{ url_for('membership')}}">Member</a></li>
+        <li class="link"><a href="{{ url_for('services')}}">Services</a></li>
+        <li class="link"><a href="{{ url_for('about')}}">About</a></li>
+      </ul>
+      <a class="btn" href="membership.html">Join Now</a>
+    </nav>
+    <header class="about__header__container">
+      <div class="header__content">
+        <h3>K-TOWN GYM</h3>
+        <h1>ABOUT US</h1>
+      </div>
+    </header>
+    <section class="about">
+      <div class="about__container">
+        <!-- Section 1 -->
+        <div class="about__row">
+          <div class="about__text">
+            <h2>Our Legacy of Fitness</h2>
+            <p>
+              Founded in 2010, Fitness First has been at the forefront of
+              transforming lives through innovative fitness solutions. Our
+              state-of-the-art facility spans over 20,000 square feet, offering
+              the latest in exercise technology and comfort.
+            </p>
+            <ul class="about__features">
+              <li>Over 10,000 success stories</li>
+              <li>Award-winning facility</li>
+              <li>Expert certified trainers</li>
+            </ul>
+          </div>
+          <div class="about__image">
+            <img src="url(../static/about-fitness.jpg)" alt="Gym Exterior" />
+          </div>
+        </div>
+
+        <div class="about__row about__row__inverse">
+          <div class="about__text">
+            <h2>Expert Training Staff</h2>
+            <p>
+              Our team consists of certified professionals with diverse
+              specializations. Each trainer brings unique expertise and a
+              passion for helping members achieve their fitness goals.
+            </p>
+            <ul class="about__features">
+              <li>NASM Certified Trainers</li>
+              <li>Specialized programs</li>
+              <li>Personalized attention</li>
+            </ul>
+          </div>
+          <div class="about__image">
+            <img
+              src="url(../static/about-training.jpg)"
+              alt="Training Session"
+            />
+          </div>
+        </div>
+
+        <div class="about__row">
+          <div class="about__text">
+            <h2>Modern Equipment</h2>
+            <p>
+              We invest in the latest fitness technology to provide our members
+              with the best possible workout experience. Our equipment is
+              regularly maintained and updated to ensure safety and efficiency.
+            </p>
+            <ul class="about__features">
+              <li>Latest cardio machines</li>
+              <li>Premium free weights</li>
+              <li>Specialized training zones</li>
+            </ul>
+          </div>
+          <div class="about__image">
+            <img
+              src="url(../static/about-equipments.jpg)"
+              alt="Gym Equipment"
+            />
+          </div>
+        </div>
+
+        <!-- Section 4 (Inverse) -->
+        <div class="about__row about__row__inverse">
+          <div class="about__text">
+            <h2>Strong Community</h2>
+            <p>
+              More than just a gym, we're a community of like-minded individuals
+              supporting each other. Our members form lasting friendships while
+              achieving their fitness goals together.
+            </p>
+            <ul class="about__features">
+              <li>Regular community events</li>
+              <li>Support groups</li>
+              <li>Fitness challenges</li>
+            </ul>
+          </div>
+          <div class="about__image">
+            <img src="url(../static/about-community.jpg)" alt="Gym Community" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="section__container footer__container">
+      <span class="bg__blur footer__blur"></span>
+      <div class="footer__col">
+        <div class="footer__logo">
+          <img src="url(../static/logo.png)" alt="logo" />
+        </div>
+        <p>
+          Take the first step towards a healthier, stronger you with our
+          unbeatable pricing plans. Let's sweat, achieve, and conquer together!
+        </p>
+        <div class="footer__socials">
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+          <a href="#"><i class="ri-instagram-line"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <a href="membership.html">Membership</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About Us</a>
+      </div>
+    </footer>
+  </body>
+</html>
