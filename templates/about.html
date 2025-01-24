@@ -17,7 +17,7 @@
   <body>
     <nav>
       <div class="nav__logo">
-        <a href="#"><img src="url(../static/logo.png)" alt="logo" /></a>
+        <a href="#"><img src="{{url_for('static', filename= '../static/logo.png')}}" alt="logo" /></a>
       </div>
       <ul class="nav__links">
         <li class="link"><a href="{{ url_for('website')}}">Home</a></li>
@@ -52,7 +52,7 @@
             </ul>
           </div>
           <div class="about__image">
-            <img src="url(../static/about-fitness.jpg)" alt="Gym Exterior" />
+            <img src="{{url_for('static', filename= '../static/about-fitness.jpg')}}" alt="Gym Exterior" />
           </div>
         </div>
 
@@ -72,7 +72,7 @@
           </div>
           <div class="about__image">
             <img
-              src="url(../static/about-training.jpg)"
+              src="{{url_for('static', filename= '../static/about-training.jpg')}}"
               alt="Training Session"
             />
           </div>
@@ -94,7 +94,7 @@
           </div>
           <div class="about__image">
             <img
-              src="url(../static/about-equipments.jpg)"
+              src="{{url_for('static', filename= '../static/about-equipments.jpg')}}"
               alt="Gym Equipment"
             />
           </div>
@@ -116,7 +116,7 @@
             </ul>
           </div>
           <div class="about__image">
-            <img src="url(../static/about-community.jpg)" alt="Gym Community" />
+            <img src="{{url_for('static', filename= '../static/about-community.jpg')}}" alt="Gym Community" />
           </div>
         </div>
       </div>
@@ -125,7 +125,7 @@
       <span class="bg__blur footer__blur"></span>
       <div class="footer__col">
         <div class="footer__logo">
-          <img src="url(../static/logo.png)" alt="logo" />
+          <img src="{{url_for('static', filename= '../static/logo.png')}}" alt="logo" />
         </div>
         <p>
           Take the first step towards a healthier, stronger you with our
