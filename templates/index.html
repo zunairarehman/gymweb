@@ -17,7 +17,7 @@
   <body>
     <nav>
       <div class="nav__logo">
-        <a href="#"><img src="url(../static/logo.png)" alt="logo" /></a>
+        <a href="#"><img src="{{url_for('static', filename= '../static/logo.png')}}" alt="logo" /></a>
       </div>
       <ul class="nav__links">
         <li class="link"><a href="{{ url_for('website')}}">Home</a></li>
@@ -108,7 +108,7 @@
       <div class="class__image">
         <span class="bg__blur"></span>
         <img
-          src="url(../static/class-1.jpg)"
+          src="{{url_for('static', filename= '../static/class-1.jpg')}}"
           alt="class"
           class="class__img-1"
         />
@@ -122,7 +122,7 @@
         atmosphere, where you can make friends and stay motivated.
       </p>
       <div class="join__image">
-        <img src="url(../static/join.jpg)" alt="Join" />
+        <img src="{{url_for('static', filename= '../static/join.jpg')}}" alt="Join" />
         <div class="join__grid">
           <div class="join__card">
             <span><i class="ri-user-star-fill"></i></span>
@@ -225,7 +225,7 @@
       <span class="bg__blur footer__blur"></span>
       <div class="footer__col">
         <div class="footer__logo">
-          <img src="url(../static/logo.png)" alt="logo" />
+          <img src="{{url_for('static', filename= '../static/logo.png')}}" alt="logo" />
         </div>
         <p>
           Take the first step towards a healthier, stronger you with our
